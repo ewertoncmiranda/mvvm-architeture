@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.HelloApp">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".activity.AddEditNoteActivity"
+            android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".MainActivity"
+            android:launchMode="singleTop">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
